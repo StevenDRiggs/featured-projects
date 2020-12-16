@@ -1,0 +1,12 @@
+<h1 id="main-heading"><%= @to_sow_item.item %></h1>
+
+<h2 class="subheading">Sow to:</h2>
+<h3 class="caption"><a href="/targets/<%= @to_sow_item.target.id %>"><%= @to_sow_item.target.name %></a></h3>
+
+<div class="button">
+  <a href="/to_sow_items/<%= @to_sow_item.id %>/edit"><button type="button">Edit Item to Sow</button></a>
+</div>
+
+<div class="button">
+  <a href="/to_sow_items/<%= @to_sow_item.id %>/delete"><button type="button">Delete Item to Sow</button></a>
+</div>

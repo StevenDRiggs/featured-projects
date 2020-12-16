@@ -1,0 +1,34 @@
+<h1 id="main-heading">Harvests</h1>
+
+<% for harvest in @user.harvests %>
+  <ul>
+    <h3 class="subheading">Sources</h3>
+    <ul>
+      <% for source in harvest.sources %>
+        <li><a href="/sources/<%= source.id %>"><%= source.name %></a></li>
+      <% end %>
+    </ul>
+    
+    <h3 class="subheading">Total Received</h3>
+    <ul>
+      <li><%= harvest.total_time_received %></li>
+      <br>
+      <li>$<%= "%.2f" % harvest.total_money_received %></li>
+      <br>
+      <% for item, quantity in harvest.all_received_items %>
+        <li><a href="/received_items/<%= item.id %>"><%= item.item %> (x<%= quantity %>)</a></li>
+      <% end %>
+    </ul>
+
+    <% if harvest.completed %>
+      <h3 class="subheading">Completed</h3>
+      <ul>
+        <li><%= harvest.time_to_completion %></li>
+      </ul>
+    <% end %>
+  </ul>
+<% end %>
+
+<div class="button">
+  <a href="/harvests/new"><button type="button">New Harvest</button></a>
+</div>

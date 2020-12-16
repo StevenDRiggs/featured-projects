@@ -1,0 +1,24 @@
+<h1 id="main-heading">New Seed</h1>
+
+<form action="/seeds" method="POST">
+
+  <% for target in @user.targets %>
+    <div>
+      <label for="target-<%= target.id %>"><h3><%= target.name %></h3></label>
+    </div>
+    <div>
+      <input type="checkbox" name="targets[]" id="target-<%= target.id %>" value="<%= target.id %>">
+    </div>
+  <% end %>
+
+  <div class="clearfix"></div>
+
+  <div class="button">
+    <a href="/targets/new"><button type="button" id="new_target">New Target</button></a>
+  </div>
+
+  <div class="button">
+    <button type="submit" id="submit">Submit</button>
+  </div>
+
+</form>

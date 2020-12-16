@@ -1,0 +1,37 @@
+<h1 id="main-heading">Sign Up</h1>
+
+<form action="/signup" method="post">
+
+  <div class="form-labels">
+    <label for="username"><strong>Username</strong></label>
+
+    <br><br>
+    
+    <label for="email"><strong>Email</strong></label>
+
+    <br><br>
+    
+    <label for="password"><strong>Password</strong></label>
+  </div>
+
+  <div class="form-fields">
+    <input type="text" name="username" id="username" required>
+
+    <br><br>
+
+    <input type="email" name="email" id="email" required>
+
+    <br><br>
+
+    <input type="password" name="password" id="password" required>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div class="button">
+    <button type="submit" class="clearfix" id="submit">Sign Up</button>
+  </div>
+
+  <caption>Already have an account? <a href="/login">Log In</a> instead.</caption>
+
+</form>

@@ -1,0 +1,36 @@
+<%for target in @seed.targets %>
+  <h2 class="subheading"><%= target.name %></h2>
+  <h3 class="subheading">Sown</h3>
+  <ul>
+    <li><%= target.time_sown %></li>
+    <br>
+    <li>$<%= "%.2f" % target.money_sown %></li>
+    <br>
+    <% for item in target.sown_items %>
+      <li><a href="/sown_items/<%= item.id %>"><%= item.item %></a></li>
+    <% end %>
+  </ul>
+
+  <h3 class="subheading">Yet to Sow</h3>
+  <ul>
+    <li><%= target.time_to_sow %></li>
+    <br>
+    <li>$<%= "%.2f" % target.money_to_sow %></li>
+    <br>
+    <% for item in target.to_sow_items %>
+      <li><a href="/to_sow_items/<%= item.id %>"><%= item.item %></a></li>
+    <% end %>
+  </ul>
+
+  <div class="button">
+    <a href="/targets/<%= target.id %>"><button type="button">View Target</button></a>
+  </div>
+<% end %>
+
+<div class="button">
+  <a href="/seeds/<%= @seed.id %>/edit"><button type="button">Edit Seed</button></a>
+</div>
+
+<div class="button">
+  <a href="/seeds/<%= @seed.id %>/delete"><button type="button">Delete Seed</button></a>
+</div>

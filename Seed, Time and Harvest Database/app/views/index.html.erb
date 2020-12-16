@@ -1,0 +1,83 @@
+<h1 id="main-heading">Main Index</h1>
+<h2 class="subheading"><%= @user.username %></h2>
+
+<table id="data">
+  <thead>
+    <tr>
+      <th><a href="/desires">Desires</a></th>
+      <th><a href="/bible_references">Bible References</a></th>
+      <th><a href="/seeds">Seeds Sown</a></th>
+      <th><a href="/seeds">Seeds Yet to Sow</a></th>
+      <th><a href="/harvests">Harvest Received</a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for desire in @user.desires %>
+      <tr>
+        <td><a href="/desires/<%= desire.id %>"><%= desire.name %></a></td>
+        <td>
+          <ul>
+            <% for bible_reference in desire.bible_references %>
+              <li><a href="/bible_references/<%= bible_reference.id %>"><%= bible_reference.reference %></a></li>
+            <% end %>
+          </ul>
+        </td>
+        <td>
+          <% for seed in desire.seeds.uniq %>
+            <a href="/seeds/<%= seed.id %>">
+              <ul>
+                <% for target in seed.targets.uniq %>
+                  <li>
+                    <p><b><%= target.name %></b></p>
+                    <p><%= target.time_sown %></p>
+                    <p>$<%= "%.2f" % [target.money_sown] %></p>
+                    <% for sown_item in target.sown_items %>
+                      <p><%= sown_item.item %></p>
+                    <% end %>
+                  </li>
+                <% end %>
+              </ul>
+            </a>
+          <% end %>
+        </td>
+        <td>
+          <% for seed in desire.seeds.uniq %>
+            <a href="/seeds/<%= seed.id %>">
+              <ul>
+                <% for target in seed.targets.uniq %>
+                  <li>
+                    <p><b><%= target.name %></b></p>
+                    <p><%= target.time_to_sow %></p>
+                    <p>$<%= "%.2f" % [target.money_to_sow] %></p>
+                    <% for to_sow_item in target.to_sow_items %>
+                      <p><%= to_sow_item.item %></p>
+                    <% end %>
+                  </li>
+                <% end %>
+              </ul>
+            </a>
+          <% end %>
+        </td>
+        <td>
+          <% for harvest in desire.harvests %>
+            <a href="/harvests/<%= harvest.id %>">
+              <ul>
+                <% for source in harvest.sources %>
+                  <li>
+                    <p><b><%= source.name %></b></p>
+                    <p><%= source.time_received %></p>
+                    <p>$<%= "%.2f" % [source.money_received] %></p>
+                    <% for received_item in source.received_items %>
+                      <p><%= received_item.item %></p>
+                    <% end %>
+                  </li>
+                <% end %>
+              </ul>
+              <%= '<p>Completed</p>' if harvest.completed %>
+          </a>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,33 @@
+<h1 id="main-heading">New Sown Item</h1>
+
+<form action="/sown_items" method="POST">
+
+  <div class="form-labels">
+    <label for="item"><h2>Item</h2></label>
+  </div>
+
+  <div class="form-fields">
+    <input type="text" name="item" id="item" required>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <h3 class="subheading">Sown to:</h3>
+  <% for target in @user.targets %>
+    <div>
+      <label for="target"><%= target.name %></label>
+    </div>
+    <div>
+      <input type="radio" name="target" id="target" value="<%= target.id %>" required>
+    </div>
+  <% end %>
+
+  <div class="button">
+    <a href="/targets/new"><button type="button">New Target</button></a>
+  </div>
+
+  <div class="button">
+    <button type="submit" id="submit">Submit</button>
+  </div>
+
+</form>

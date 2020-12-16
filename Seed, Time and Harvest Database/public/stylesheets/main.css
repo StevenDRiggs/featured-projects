@@ -1,0 +1,114 @@
+* {
+  list-style: none;
+  width: fit-content;
+  margin: auto;
+  padding: 0;
+}
+
+body {
+  background-color: #669900;
+  color: #382111;
+}
+
+div.warning {
+  background-color: #fc7f03;
+}
+
+div.error {
+  background-color: red;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: #fc7f03;
+}
+
+a:hover {
+  color: #74a102;
+}
+
+.clearfix {
+  clear: both;
+}
+
+div.wrapper {
+  display: block;
+  position: relative;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#main-heading {
+  margin: 15px auto;
+}
+
+.subheading {
+  margin: 25px auto;
+}
+
+.caption {
+  margin-top: 10px;
+}
+
+div.form-labels {
+  width: 50%;
+  float: left;
+}
+
+div.form-fields {
+  width: 50%;
+  float: right;
+}
+
+div#signup a:link {
+  color: #06401a;
+}
+
+div#login a:link {
+  color: white;
+}
+
+div#signup a:visited, div#login a:visited {
+  color: #0c6bb3;
+}
+
+div.button {
+  margin: 25px auto;
+}
+
+th, td {
+  border: 1px solid #382111;
+  padding: 5px;
+  background-color: #568900;
+}
+
+th {
+  border: 2px double #382111;
+  background-color: #61214d;
+}
+
+th a:link, th a:visited {
+  text-decoration: none;
+  color: #917947;
+}
+
+td a:link, td a:visited {
+  text-decoration: none;
+  color: #382111;
+}
+
+tr:nth-child(even) td {
+  background-color: #61214d;
+}
+
+tr:nth-child(even) td a:link, tr:nth-child(even) td a:visited {
+  color: #917947;
+}
+
+footer.branding {
+  margin-top: 20px;
+}

@@ -1,0 +1,43 @@
+<h1 id="main-heading"><%= @bible_reference.reference %></h1>
+<p class="subheading caption"><%= @bible_reference.content %></p>
+
+<h2 class="subheading">Desires</h2>
+<ul>
+  <% for desire in @bible_reference.desires %>
+    <li><a href="/desires/<%= desire.id %>"><h3><%= desire.name %></h3></a></li>
+  <% end %>
+</ul>
+
+<h2 class="subheading">Seeds</h2>
+<ul>
+  <% for seed in @bible_reference.seeds %>
+    <a href="/seeds/<%= seed.id %>">
+      <ul>
+        <% for target in seed.targets %>
+          <li><h3><%= target.name %></h3></li>
+        <% end %>
+      </ul>
+    </a>
+  <% end %>
+</ul>
+
+<h2 class="subheading">Harvests</h2>
+<ul>
+  <% for harvest in @bible_reference.harvests %>
+    <a href="/harvests/<%= harvest.id %>">
+      <ul>
+        <% for source in harvest.sources %>
+          <li><h3><%= source.name %></h3></li>
+        <% end %>
+      </ul>
+    </a>
+  <% end %>
+</ul>
+
+<div class="button">
+  <a href="/bible_references/<%= @bible_reference.id %>/edit"><button type="button">Edit Bible Reference</button></a>
+</div>
+
+<div class="button">
+  <a href="/bible_references/<%= @bible_reference.id %>/delete"><button type="button">Delete Bible Reference</button></a>
+</div>
