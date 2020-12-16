@@ -1,10 +1,10 @@
 # Calapitter Image Library
 
 <!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
-![GitHub repo size](https://img.shields.io/github/repo-size/scottydocs/README-template.md)
-![GitHub contributors](https://img.shields.io/github/contributors/scottydocs/README-template.md)
-![GitHub stars](https://img.shields.io/github/stars/scottydocs/README-template.md?style=social)
-![GitHub forks](https://img.shields.io/github/forks/scottydocs/README-template.md?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/StevenDRiggs/featured-projects/tree/master/Calapitter%20Image%20Library)
+![GitHub contributors](https://img.shields.io/github/contributors/StevenDRiggs/featured-projects/tree/master/Calapitter%20Image%20Library)
+![GitHub stars](https://img.shields.io/github/stars/StevenDRiggs/featured-projects/tree/master/Calapitter%20Image%20Library)
+![GitHub forks](https://img.shields.io/github/forks/StevenDRiggs/featured-projects/tree/master/Calapitter%20Image%20Library)
 
 Calapitter Image Library (CIL) is a simple place for users to store all their favorite images from around the web.
 
