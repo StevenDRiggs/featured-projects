@@ -16,14 +16,13 @@ To install STH, follow these steps:
 1. Run `gem install bundler` in your terminal.
 2. Fork and clone this repo.
 3. Navigate to your installation folder.
-4. Navigate to the `Sth` folder
-5. Run bundle install`
+4. Run `bundle install`
 
 ## Using STH
 
 To use STH, follow these steps:
 
-1. In the `Sth` folder, run `shotgun` (you may need to run `bundle exec shotgun` if you have received an error).
+1. In the program folder, run `shotgun` (you may need to run `bundle exec shotgun` if you have received an error).
 2. Using your browser, navigate to 'localhost:9393'
 
 ## Contributing to STH
