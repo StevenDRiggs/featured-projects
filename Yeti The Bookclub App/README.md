@@ -5,39 +5,15 @@
 ![GitHub stars](https://img.shields.io/github/stars/StevenDRiggs/featured-projects)
 ![GitHub forks](https://img.shields.io/github/forks/StevenDRiggs/featured-projects)
 
-Project name is a `<utility/tool/feature>` that allows `<insert_target_audience>` to do `<action/task_it_does>`.
+Yeti is a nice way to keep track of your favorite books, authors and genres.  Users can add notes about each of their favorited items, view then most popular items, and see the details of anything.
 
-Additional line of information text about what the project does. Your introduction should be around 2 or 3 sentences. Don't go overboard, people won't read it.
-
-## Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-* You have installed the latest version of `<coding_language/dependency/requirement_1>`
-* You have a `<Windows/Linux/Mac>` machine. State which OS is supported/which is not.
-* You have read `<guide/link/documentation_related_to_project>`.
-
-## Installing Yeti
-
-To install Yeti, follow these steps:
-
-Linux and macOS:
-```
-<install_command>
-```
-
-Windows:
-```
-<install_command>
-```
 ## Using Yeti
 
 To use Yeti, follow these steps:
 
 ```
-<usage_example>
+Sign up to create an account, then click any link to navigate.  Go to My Profile to add notes to your favorites (only visible to you).
 ```
-
-Add run commands and examples you think users will find useful. Provide an options reference for bonus points!
 
 ## Contributing to Yeti
 To contribute to Yeti, follow these steps:
@@ -52,17 +28,12 @@ Alternatively see the GitHub documentation on [creating a pull request](https://
 
 ## Contributors
 
-Thanks to the following people who have contributed to this project:
+Thanks to the following people who wrote the README template:
 
 * [@scottydocs](https://github.com/scottydocs) 📖
 * [@cainwatson](https://github.com/cainwatson) 🐛
 * [@calchuchesta](https://github.com/calchuchesta) 🐛
 
-You might want to consider using something like the [All Contributors](https://github.com/all-contributors/all-contributors) specification and its [emoji key](https://allcontributors.org/docs/en/emoji-key).
-
 ## Contact
 
-If you want to contact me you can reach me at <your_email@address.com>.
-
-## License
-This project uses the following license: [<license_name>](<link>).
+If you want to contact me you can reach me at <sfriggs21@gmail.com>.
